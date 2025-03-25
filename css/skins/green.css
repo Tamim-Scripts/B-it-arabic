@@ -1,5 +1,5 @@
 /* =================================================================== */
-/* Green #2e95bd
+/* #2e95bd
 ====================================================================== */
 h1 > span,
 .projectmanager h3,
@@ -115,12 +115,12 @@ body.double-diagonal .logos::before,
     border: 2px solid #2e95bd;
 }
 .preloader .loader {
-  background-image: url(../../img/preloaders/preloader-green-light.svg);
+  background-image: url(../../img/preloaders/preloader-blue-2e95bd.svg);
   background-repeat:no-repeat;
   background-position: 50% 50%;
 }
 body.dark .preloader .loader {
-  background-image: url(../../img/preloaders/preloader-green-dark.svg);
+  background-image: url(../../img/preloaders/preloader-blue-2e95bd.svg);
   background-repeat:no-repeat;
   background-position: 50% 50%;
 }

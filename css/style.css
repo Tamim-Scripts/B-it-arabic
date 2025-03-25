@@ -1,10 +1,4 @@
-﻿/*
-Template Name: Salimo - One Page Parallax
-Author: Celtano
-Author URI: http://themeforest.net/user/celtano
-Description: Salimo - One Page Parallax
-Version: 1.0
-*/
+﻿
 /*------------------------------------------------------------------
 [Table of contents]
 	+ General
@@ -2126,6 +2120,7 @@ body.dark .header.header-fixed .logo a img.logo-dark {
     font-weight: 500;
 }
 .testimonials #quote-carousel .img-fluid {
+    height: 195px;
     margin: 0 auto 25px;
     border: 6px solid #f9f9f9;
     background: #f9f9f9;
@@ -2955,7 +2950,7 @@ body.blog-page article .comments-form .custom-button:before {
 
 .videopromotion {
     color: #fff;
-    background-image: url("http://via.placeholder.com/1600x650");
+    background-image: url("");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
