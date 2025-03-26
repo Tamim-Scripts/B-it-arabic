@@ -138,6 +138,7 @@ body.dark .latest-post .post-title a,
 body.dark .header-fixed .nav-menu ul.nav-menu-inner li a,
 body.dark .widget-tags ul>li a:hover {
   color: #fff;
+  
 }
 
 body.dark ul.nav.nav-tabs li a,
@@ -1408,6 +1409,7 @@ a:hover {
 .header-fixed .nav-menu ul.nav-menu-inner li a {
     padding: 26px 12px;
     color: #555;
+    
 }
 .nav-menu ul.nav-menu-inner li:first-child a {
 	border-top:0 !important;
@@ -1527,7 +1529,7 @@ body.dark .header.header-fixed .logo a img.logo-dark {
     display: block;
     text-decoration: none;
     color: #fff;
-    font-size: 13px;
+    font-size: 17px;
     line-height: 1;
     padding: 43px 12px;
     font-weight: 600;
@@ -1535,8 +1537,17 @@ body.dark .header.header-fixed .logo a img.logo-dark {
     font-family: "Raleway", sans-serif;
 }
 .nav-menu ul.nav-menu-inner li a i {
-    font-size: 11px;
+    font-size: 15px;
     padding-right: 3px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border: 2px solid transparent; /* Initially transparent border */
+    transition: border 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.nav-menu ul.nav-menu-inner li a:hover i, .nav-menu ul.nav-menu-inner li a.active i {
+  visibility: visible;
+  opacity: 1;
 }
 .navbar-toggler {
     outline: none !important;
@@ -3900,3 +3911,8 @@ body.skew .portfolio .container  {
     padding: 0 15px;
 }
 }
+
+/* hover try */
+
+
+
