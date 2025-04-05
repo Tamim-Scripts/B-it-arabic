@@ -1437,6 +1437,9 @@ a:hover {
     float: left;
     text-align: left;
     display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    
 }
 .logo a {
 
@@ -1507,6 +1510,9 @@ body.dark .header.header-fixed .logo a img.logo-dark {
     opacity: 0;
 }
 /* Navigation Menu */
+#singlepage-nav {
+  direction: rtl;
+}
 
 .nav-menu {
     position: static;
@@ -1519,6 +1525,8 @@ body.dark .header.header-fixed .logo a img.logo-dark {
     margin: 0;
     padding: 0;
     list-style: none;
+    margin-right: 0 !important;
+    margin-left: auto;
 }
 .nav-menu ul.nav-menu-inner li {
     display: inline-block;
@@ -3310,8 +3318,10 @@ body.dark.blog-page .banner-blog-post .meta {
   content: "\f09a";
 }
 
-.social-icons ul li a[title="twitter"]:before {
-  content: "\f099";
+.social-icons ul li a[title="x"]:before {
+  content: "\e61b"; /* Font Awesome 6 'x-twitter' icon */
+  font-family: "Font Awesome 6 Free"; /* Ensure you're using the correct font */
+  font-weight: 900;
 }
 
 .social-icons ul li a[title="google"]:before {

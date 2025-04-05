@@ -7,9 +7,13 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Cairo:200,300,400,600,700,900&amp;subset=arabic" rel="stylesheet">
+    <!--  Font Awesome 6 -->
+    <!-- Font Awesome 6 CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="http://via.placeholder.com/30x30">
+    <link rel="shortcut icon" href="img/b-it/BIT-v1.png">
 
     <!-- Template CSS Files -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
@@ -44,9 +48,25 @@
         <header id="header" class="header">
             <div class="header-inner">
                 <!-- Navbar Starts -->
-                <nav class="navbar navbar-expand-lg p-0" id="singlepage-nav">
-					<!-- Logo Starts -->
-                    <div class="logo">
+                <nav class="navbar navbar-expand-lg p-0" id="singlepage-nav" dir="rtl">
+					
+					
+					<!-- Navigation Menu Starts -->
+                    <div class="collapse navbar-collapse nav-menu" id="navbarSupportedContent">
+                        <ul class="nav-menu-inner  mr-auto ">
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#mainslider"><i class="fa fa-home"></i> الرئيسية</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#about"><i class="fa fa-user"></i>عن</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#services"><i class="fa fa-cog"></i> خدمات</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#portfolio"><i class="fa fa-image"></i> مَلَفّ</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#team"><i class="fa fa-user"></i> فريقنا</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#contact"><i class="fa fa-envelope"></i> إتصل بنا</a></li>
+                            <li onclick="window.location.href='https://tamim-scripts.github.io/Bit-solution/';"><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="https://tamim-scripts.github.io/Bit-solution/"><i class="fa fa-globe"></i> English</a></li>
+                        </ul>
+                    </div>
+					<!-- Navigation Menu Ends -->
+
+                    <!-- Logo Starts -->
+                    <div class="logo ">
                         <a data-toggle="collapse" data-target=".navbar-collapse.show" class="navbar-brand link-menu scroll-to-target" href="#mainslider">
                             <!-- Logo White Starts -->
                             <img id="logo-light" class="logo-light" src="img/b-it/BIT-v1.png" alt="logo-light" />
@@ -57,29 +77,6 @@
                         </a>
                     </div>
 					<!-- Logo Ends -->
-					<!-- Hamburger Icon Starts -->
-                    <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span id="icon-toggler">
-						  <span></span>
-						  <span></span>
-						  <span></span>
-						  <span></span>
-						</span>
-					</button>
-					<!-- Hamburger Icon Ends -->
-					<!-- Navigation Menu Starts -->
-                    <div class="collapse navbar-collapse nav-menu" id="navbarSupportedContent">
-                        <ul class="nav-menu-inner  mr-auto ">
-                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#mainslider"><i class="fa fa-home"></i> الرئيسية</a></li>
-                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#about"><i class="fa fa-user"></i>عن</a></li>
-                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#services"><i class="fa fa-cog"></i> خدمات</a></li>
-                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#portfolio"><i class="fa fa-image"></i> مَلَفّ</a></li>
-                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#team"><i class="fa fa-user"></i> فريقنا</a></li>
-                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#contact"><i class="fa fa-envelope"></i> إتصل بنا</a></li>
-                            <li onclick="window.location.href='https://b-it.co/';"><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="https://b-it.co/"><i class="fa fa-globe"></i>  يترجم</a></li>
-                        </ul>
-                    </div>
-					<!-- Navigation Menu Ends -->
                 </nav>
                 <!-- Navbar Ends -->
             </div>
@@ -663,20 +660,9 @@
                             <a title="لينة مرزوقي \\ مصمّمة" href="http://via.placeholder.com/480x600" data-gal="magnific-pop-up[team]" class="team-member-img-wrap"><img src="img/img/team/team11.jpeg" alt="team member"></a>
                             <!-- Team Member Picture Ends -->
                             <!-- Team Member Details Starts -->
-                            <div class="team-member-caption social-icons">
+                            <div class="team-member-caption">
                                 <h4> بكر جميل</h4>
                                 <p>مؤسس</p>
-                                <ul class="list list-inline social">
-                                    <li>
-                                        <a href="#" class="fa fa-facebook"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="fa fa-twitter"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="fa fa-google-plus"></a>
-                                    </li>
-                                </ul>
                             </div>
                             <!-- Team Member Details Starts -->
                         </div>
@@ -692,17 +678,6 @@
                             <div class="team-member-caption social-icons">
                                 <h4> فيصل محمد</h4>
                                 <p> المدير العام</p>
-                                <ul class="list list-inline social">
-                                    <li>
-                                        <a href="#" class="fa fa-facebook"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="fa fa-twitter"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="fa fa-google-plus"></a>
-                                    </li>
-                                </ul>
                             </div>
                             <!-- Team Member Details Ends -->
                         </div>
@@ -719,17 +694,6 @@
                             <div class="team-member-caption social-icons">
                                 <h4> ميزانور معروف</h4>
                                 <p>  مدير العمليات</p>
-                                <ul class="list list-inline social">
-                                    <li>
-                                        <a href="#" class="fa fa-facebook"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="fa fa-twitter"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="fa fa-google-plus"></a>
-                                    </li>
-                                </ul>
                             </div>
                             <!-- Team Member Details Ends -->
                         </div>
@@ -739,23 +703,12 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="team-member">
                             <!-- Team Member Picture Starts -->
-                            <a title="أنس السلاّمي \\ مبرمج" href="http://via.placeholder.com/480x600" data-gal="magnific-pop-up[team]" class="team-member-img-wrap"><img src="img/img/team/Tamim.jpg" alt="team member"></a>
+                            <a title="أنس السلاّمي \\ مبرمج" href="http://via.placeholder.com/480x600" data-gal="magnific-pop-up[team]" class="team-member-img-wrap"><img src="img/img/team/tamim2.jpeg" alt="team member"></a>
                             <!-- Team Member Picture Ends -->
                             <!-- Team Member Details Starts -->
                             <div class="team-member-caption social-icons">
                                 <h4> تميم احمد</h4>
                                 <p>مهندس برمجيات</p>
-                                <ul class="list list-inline social">
-                                    <li>
-                                        <a href="#" class="fa fa-facebook"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="fa fa-twitter"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="fa fa-google-plus"></a>
-                                    </li>
-                                </ul>
                             </div>
                             <!-- Team Member Details Ends -->
                         </div>
@@ -930,7 +883,7 @@
                 <div class="social-icons">
                     <ul class="social">
                         <li>
-                            <a class="twitter" href="https://x.com/Mezanur_bit" title="twitter"></a>
+                            <a class="twitter" href="https://x.com/Mezanur_bit" title="x"></a>
                         </li>
                         <li>
                             <a class="facebook" href="https://www.facebook.com/profile.php?id=61573792652592" title="facebook"></a>
