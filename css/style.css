@@ -1396,7 +1396,6 @@ a:hover {
 .header-inner {
     padding-left: 30px;
     padding-right: 30px;
-    position: relative;
 }
 .header-fixed .logo a {
     margin-top: 0;
@@ -1471,11 +1470,6 @@ a:hover {
 .header.header-fixed .logo a img.logo-dark {
     opacity: 1;
 }
-.logo {
-    float: left;
-    text-align: left;
-    display: inline-block;
-}
 .logo a {
     max-width: 100%;
     margin-top: 10px;
@@ -1509,11 +1503,6 @@ body.dark .header.header-fixed .logo a img.logo-light {
 body.dark .header.header-fixed .logo a img.logo-dark {
     opacity: 0;
 }
-/* Navigation Menu */
-#singlepage-nav {
-  direction: rtl;
-}
-
 .nav-menu {
     position: static;
     float: right;
@@ -3668,10 +3657,16 @@ body.dark.blog-page .banner-blog-post .meta {
         display: block;
         width: 100%;
     }
+    .header-inner{
+      padding-left: 5px;
+      padding-right:5px;
+      padding-top: 10px;
+      margin-top: 10px;
+  }
     .nav-menu {
         position: fixed;
         top: 65px;
-        left: 0;
+        right: 0;
         float: none;
         width: 100%;
         background: #fff;
@@ -3715,7 +3710,10 @@ body.dark.blog-page .banner-blog-post .meta {
         padding-left: 15px !important;
         padding-right: 15px !important;
     }
-    .header-inner,
+    .header-inner{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
     .videopromotion p,
     .newsletter p,
     .logos .container,
@@ -3727,7 +3725,7 @@ body.dark.blog-page .banner-blog-post .meta {
 		margin-bottom:65px;
 	}
 	.about ul.nav.nav-tabs li a, .about ul.nav.nav-tabs li a.active {
-		padding:0 20px;
+		padding:0 10px;
 	}
 	.about ul.nav.nav-tabs li:first-child a {
 		padding-left:0;
@@ -3746,12 +3744,12 @@ body.dark.blog-page .banner-blog-post .meta {
         font-size: 18px;
     }
     .header {
-        height: 65px;
+        height: 25px;
     }
     .header .logo a {
-        width: 100px;
-        margin-top: 9px;
-        margin-bottom: 25px;
+        width:60px;
+        margin-top: 5px;
+        margin-bottom: 15px;
         transition: all 0.3s ease 0s;
         -o-transition: all 0.3s ease 0s;
         -moz-transition: all 0.3s ease 0s;
@@ -3874,7 +3872,7 @@ body.dark.blog-page .banner-blog-post .meta {
   }
   .about ul.nav.nav-tabs li a.active {
     color: #fff;
-	    margin: 0;
+	  margin: 0;
     padding: 15px 0;
   }
   .about ul.nav.nav-tabs li:first-child a {
@@ -3887,7 +3885,7 @@ body.dark.blog-page .banner-blog-post .meta {
   }
   .nav-tabs>li {
     float: none;
-	width:100%;
+	  width:100%;
     text-align: center;
     border-bottom: 1px solid #ddd;
   }
