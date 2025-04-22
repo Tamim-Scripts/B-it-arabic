@@ -3922,5 +3922,33 @@ body.skew .portfolio .container  {
 }
 /* Services details
 ---------------------------------------- */
+.video-background-section {
+  position: relative;
+  height: 100vh; /* Full screen height */
+  overflow: hidden;
+  margin: auto;
+  
+}
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  object-fit: cover;
+}
+
+.content-overlay {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  padding-top: 20%;
+}
 
 
