@@ -3924,31 +3924,67 @@ body.skew .portfolio .container  {
 ---------------------------------------- */
 .video-background-section {
   position: relative;
+  width: 100%;
   height: 100vh; /* Full screen height */
   overflow: hidden;
-  margin: auto;
-  
+  background: #b9b5b5; /* Fills space around video */
 }
 
 .background-video {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Shows full video without cropping */
   transform: translate(-50%, -50%);
-  z-index: 0;
-  object-fit: cover;
+  z-index: 1;
 }
 
 .content-overlay {
   position: relative;
-  z-index: 1;
-  color: #fff;
+  z-index: 2;
+  color: white;
   text-align: center;
-  padding-top: 20%;
+  padding: 20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
+@media (max-width: 768px) {
+  .video-background-section {
+      height: 100vh;
+  }
 
+  .content-overlay {
+      padding: 15px;
+      font-size: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  .content-overlay h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+  }
+
+  .content-overlay p {
+      font-size: 16px;
+      line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-overlay {
+      font-size: 14px;
+      padding: 10px;
+  }
+
+  .content-overlay h2 {
+      font-size: 20px;
+  }
+
+  .content-overlay p {
+      font-size: 14px;
+  }
+}
